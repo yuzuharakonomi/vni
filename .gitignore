@@ -1,0 +1,6 @@
+# Astro
+.astro/
+
+# npm
+node_modules/
+
