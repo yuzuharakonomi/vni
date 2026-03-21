@@ -9,6 +9,9 @@
 	"assist": {
 		"enabled": true
 	},
+	"files": {
+		"includes": ["**", "!.astro"]
+	},
 	"overrides": [
 		{
 			"includes": ["**/*.astro"],
