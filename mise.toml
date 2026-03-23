@@ -1,3 +1,18 @@
 [tools]
 pnpm = "latest"
 
+[tasks.lint]
+description = "Lint with Biome"
+run = "pnpm biome lint"
+
+[tasks.format]
+description = "Format with Biome"
+run = "pnpm biome format"
+
+[tasks.check]
+description = "Check .astro/.ts files"
+run = "pnpm astro check"
+
+[tasks.pre-commit]
+depends = ["lint", "format", "check"]
+
