@@ -12,6 +12,11 @@
 	"files": {
 		"includes": ["**", "!.astro"]
 	},
+	"json": {
+	        "formatter": {
+	            "indentStyle": "space"
+                }
+	},
 	"overrides": [
 		{
 			"includes": ["**/*.astro"],
