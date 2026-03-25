@@ -5,7 +5,6 @@ services:
       - "4321:4321"
     volumes:
       - type: bind
-        source: ./src
+        source: ${LOCAL_WORKSPACE_FOLDER:-.}/src
         target: /app/src
         read_only: true
-
