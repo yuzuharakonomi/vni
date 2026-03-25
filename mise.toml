@@ -1,5 +1,6 @@
 [tools]
 pnpm = "latest"
+node = "latest"
 
 [tasks.lint]
 description = "Lint with Biome"
@@ -15,4 +16,12 @@ run = "pnpm astro check"
 
 [tasks.pre-commit]
 depends = ["lint", "format", "check"]
+
+[tasks.build-dev-image]
+description = "Build the development docker image"
+run = "docker build -t vni-dev ."
+
+[tasks.run-dev-image]
+description = "Run the development docker image"
+run = "docker run -it --rm vni-dev"
 

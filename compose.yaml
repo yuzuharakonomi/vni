@@ -1,0 +1,10 @@
+services:
+  vni:
+    build: .
+    ports:
+      - "4321:4321"
+    volumes:
+      - type: bind
+        source: ${LOCAL_WORKSPACE_FOLDER:-.}/src
+        target: /app/src
+        read_only: true
