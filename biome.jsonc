@@ -17,6 +17,11 @@
       "indentStyle": "space"
     }
   },
+  "javascript": {
+    "formatter": {
+      "indentStyle": "space"
+    }
+  },
   "overrides": [
     {
       "includes": ["**/*.astro"],
