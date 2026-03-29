@@ -1,6 +1,7 @@
 ---
 import { Font } from "astro:assets";
 import Header from "../components/Header.astro";
+import "../styles/colors.css";
 ---
 
 <html lang="ja">
@@ -14,3 +15,9 @@ import Header from "../components/Header.astro";
     <slot />
   </body>
 </html>
+
+<style>
+body {
+  background-color: var(--color-background);
+}
+</style>

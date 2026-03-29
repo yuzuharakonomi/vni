@@ -1,3 +1,22 @@
 <header>
   <h1>yuzuhara.net</h1>
 </header>
+
+<style>
+header {
+  display: flex;
+}
+h1 {
+  flex: 1;
+  color: var(--color-foreground);
+  font-family: var(--font-noto-sans-jp);
+  font-size: 24px;
+  margin-top: 0;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+</style>
