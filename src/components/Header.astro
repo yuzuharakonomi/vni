@@ -1,0 +1,46 @@
+<header>
+  <h1>yuzuhara.net</h1>
+  <nav><a href="/"> Home </a></nav>
+</header>
+
+<style>
+header {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  flex: 1;
+  color: var(--color-foreground);
+  font-size: 24px;
+  margin: 0;
+  vertical-align: center;
+}
+nav {
+  align-items: center;
+  & a {
+    color: var(--color-accent-light);
+    display: inline-block;
+    font-size: 18px;
+    padding: 1rem;
+    &:hover {
+      color: var(--color-accent-dark);
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    display: block;
+  }
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    place-content: center;
+    & a {
+      font-size: 12px;
+    }
+  }
+}
+</style>

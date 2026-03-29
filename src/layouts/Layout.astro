@@ -1,5 +1,7 @@
 ---
 import { Font } from "astro:assets";
+import Header from "../components/Header.astro";
+import "../styles/colors.css";
 ---
 
 <html lang="ja">
@@ -9,6 +11,19 @@ import { Font } from "astro:assets";
     <Font cssVariable="--font-noto-sans-jp" />
   </head>
   <body>
+    <Header />
     <slot />
   </body>
 </html>
+
+<style>
+body {
+  background-color: var(--color-background);
+}
+</style>
+
+<style is:global>
+* {
+  font-family: var(--font-noto-sans-jp);
+}
+</style>
