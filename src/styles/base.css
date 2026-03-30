@@ -1,0 +1,14 @@
+:root {
+  --color-foreground: #231521;
+  --color-background: #f2e9f0;
+  --color-accent-light: #c59ebe;
+  --color-accent-dark: #945989;
+
+  --font-size-title: 24px;
+  --font-size-main: 18px;
+
+  @media screen and (max-width: 1024px) {
+    --font-size-title: 18px;
+    --font-size-main: 12px;
+  }
+}
