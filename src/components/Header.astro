@@ -11,7 +11,7 @@ header {
 h1 {
   flex: 1;
   color: var(--color-foreground);
-  font-size: 24px;
+  font-size: var(--font-size-title);
   margin: 0;
   vertical-align: center;
 }
@@ -20,7 +20,7 @@ nav {
   & a {
     color: var(--color-accent-light);
     display: inline-block;
-    font-size: 18px;
+    font-size: var(--font-size-main);
     padding: 1rem;
     &:hover {
       color: var(--color-accent-dark);
@@ -32,14 +32,14 @@ nav {
     display: block;
   }
   h1 {
-    font-size: 18px;
+    font-size: var(--font-size-title);
     text-align: center;
   }
   nav {
     display: flex;
     place-content: center;
     & a {
-      font-size: 12px;
+      font-size: var(--font-size-main);
     }
   }
 }
