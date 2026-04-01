@@ -2,4 +2,27 @@
 import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout />
+<Layout>
+  <main>
+    <h1>Welcome to yuzuhara.net.</h1>
+    <p>
+      The website's currently a work in progress.
+      <b>To be honest, there won't be anything worth reading, though.</b>
+    </p>
+  </main>
+</Layout>
+
+<style>
+main {
+  color: var(--color-foreground);
+}
+h1 {
+  font-size: var(--font-size-title);
+}
+p {
+  font-size: var(--font-size-main);
+}
+b {
+  color: var(--color-accent-light);
+}
+</style>
