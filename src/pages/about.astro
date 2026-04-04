@@ -1,0 +1,31 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <main>
+    <h1>このサイトについて</h1>
+    <p>
+      このサイトは作者が生きた痕跡を残すことを目的として公開しています。<br>そのため、<a
+        href="https://web.archive.org"
+        >Wayback Machine</a
+      >で時々このページのアーカイブを作成しています。<br>過去のバージョンを見たい方はそちらもぜひご覧ください。
+    </p>
+  </main>
+</Layout>
+
+<style>
+main {
+  color: var(--color-foreground);
+  padding: 0.5rem;
+}
+h1 {
+  font-size: var(--font-size-title);
+}
+p {
+  font-size: var(--font-size-main);
+}
+a {
+  color: var(--color-accent-light);
+}
+</style>
