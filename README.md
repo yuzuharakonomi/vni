@@ -1,2 +1,3 @@
 # vni
-Virtual-Net-Idol
+
+<https://yuzuhara.net> のソースコードです。
