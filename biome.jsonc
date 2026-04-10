@@ -10,7 +10,12 @@
     "enabled": true
   },
   "files": {
-    "includes": ["**", "!.astro"]
+    "includes": [
+      "**",
+      "!!**/test-results",
+      "!!**/playwright-report",
+      "!!**/.astro"
+    ]
   },
   "json": {
     "formatter": {
