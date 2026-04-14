@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "vitest"
+    "test:unit": "vitest --exclude tests/e2e/",
+    "test:e2e": "vitest --browser tests/e2e/**/*.spec.ts"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@biomejs/biome": "2.4.8",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
+    "@vitest/browser-playwright": "^4.1.4",
     "vitest": "^4.1.4",
     "wrangler": "^4.81.1"
   }
