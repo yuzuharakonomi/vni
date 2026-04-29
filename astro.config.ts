@@ -1,3 +1,4 @@
+import sitemap from "@astrojs/sitemap";
 import { defineConfig, fontProviders } from "astro/config";
 
 export default defineConfig({
@@ -8,4 +9,6 @@ export default defineConfig({
       cssVariable: "--font-noto-sans-jp",
     },
   ],
+  site: "https://yuzuhara.net",
+  integrations: [sitemap()],
 });
